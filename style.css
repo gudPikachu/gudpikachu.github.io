@@ -52,11 +52,16 @@ a {
 	color: inherit;
 }
 
+
+
+
 /*----------------------------------------------*/
 
 body {
 	margin: 0;
 	padding: 0;
+	width: 100vw;
+	height: 100vh;
 
 	background-color: #1F2027;
 	color: #fff;
@@ -81,6 +86,7 @@ body {
 #grid-container {
 	width: 100vw;
 	height: 100vh;
+
 	display: grid;
 	grid-template-rows: 1fr 10fr 1fr;
 	grid-template-areas: 
@@ -213,3 +219,71 @@ nav ul li a:hover {
 	opacity: 1;
 }
 
+/*----------------------------------*/
+/*PHONE*/
+
+@media only screen and (max-width: 600px) {
+
+	#main-nav {
+		width: 100%;
+		justify-content: center;
+		margin-right: 0;
+	}
+
+
+	#main-nav ul{
+		justify-content: space-around;
+	}
+
+	#main-nav ul{
+		width: 100%;
+	}
+
+ 	#social-nav {
+		justify-content: center;
+	}
+	
+	#social-nav ul{
+		justify-content: space-around;
+	}
+
+	#main-nav ul li a{
+		display: inline-block;
+		padding: 0.9em 1.6em;
+	}
+
+	#button-work a{
+		padding: 0.9em 1.3em;
+	}
+	/*---------------------------------*/
+	nav ul li {
+		font-size: 15;
+		font-weight: 900;
+	}
+
+	#social-nav ul li {
+		font-size: 13;
+		font-weight: 900;
+	}
+
+	/*---------------------------------*/
+
+	#main h2:last-child {
+		margin-top: 10vh;
+	}
+
+	#main h1 {
+		font-size: 64;
+		font-weight: 700;
+	}
+
+	#main h2 {
+		font-size: 28;
+		font-weight: 300;
+	}
+
+	#main #intro a {
+		font-size: 32;
+		font-weight: 300;
+	}
+}
